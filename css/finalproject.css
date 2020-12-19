@@ -1,0 +1,86 @@
+
+
+			html {
+                background: url(../images/BackgroundPink.png);
+
+			}
+
+
+
+			body {
+				width: 960px;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 30px;
+				background-color: #fff4ee;
+				text-align: center;
+                box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.42);
+                font-family: 'Open Sans', sans-serif;
+                border-radius: 10px;
+			}
+
+			a {
+		      	color: #6f4c4c;
+			    font-size: 20px;
+                text-decoration: none;
+                font-family: 'Tinos', serif;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+			}
+
+			article {
+
+				padding: 0px 100px 0px 100px;
+			}
+
+
+			h1 {
+				font-size: 36px;
+				color: #6f4c4c;
+                text-transform: uppercase;
+                font-family: 'Tinos', serif;
+                line-height: 30pt;
+			}
+
+			h2 {
+				font-size: 16px;
+				color: #666;
+                font-family: 'Tinos', serif;
+			}
+
+
+			p {
+				font-size: 15px;
+				color: rgba(0, 0, 0, 0.88);	
+                margin: 30px;
+			}
+
+            footer {
+                height: 50px;
+                background: rgba(0, 0, 0, 0.12);
+                text-transform: uppercase;
+                font-size: 10px;
+                letter-spacing: 6px;
+                color: #000000;
+                padding-top: 10px;
+                border-radius: 10px;
+            }
+
+            nav{
+                margin: 30px;
+            }
+
+            a:hover{
+                color: #f7749c;
+            }
+
+            img{
+                border-radius: 10px;
+                box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.16);
+            }
+
+            object{
+                border-radius: 10px;
+                box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.16);
+            }
+
