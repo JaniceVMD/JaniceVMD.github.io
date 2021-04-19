@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/food.css">
+    <title>SF RESTAURANTS</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="logo" href="index.html"> <img width="120" src="images/logo.svg"></a>
+        <a class="home" href="index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">TOURIST ATTRACTIONS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content0" id="myDropdown">
+                <a class="Droptext" href="museums.html">MUSEUMS</a>
+                <a class="Droptext" href="landmarks.html">LANDMARKS</a>
+            </div>
+        </div>
+
+        <div class="dropdown2">
+            <button class="dropbtn2" onclick="myFunction2()">FOOD
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown2">
+                <a class="Droptext" href="snacks.html">SNACKS</a>
+                <a class="Droptext" href="restaurants.html">RESTARANTS</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="gallerysection">
+        <div class="gallery clear">
+            <img src="images/pizza.jpg" width="600" height="400">
+
+            <div class="desc">Golden Boy Pizza <br>
+                <p class="location"><a target="_blank" href="https://www.google.com/maps/place/Golden+Boy+Pizza/@37.6929142,-122.5108226,11z/data=!4m8!1m2!2m1!1sGolden+Boy+Pizza!3m4!1s0x808580f15be21d9b:0xe113f26b1f7d55ae!8m2!3d37.7997222!4d-122.4080917">Find Location here!</a></p>
+            </div>
+        </div>
+
+        <div class="gallery">
+
+            <img src="images/sushi.jpg" width="600" height="400">
+
+            <div class="desc">Kazoku Sushi <br>
+                <p class="location"><a target="_blank" href="https://www.google.com/maps/place/Kazoku+Sushi/@37.775747,-122.5044412,17z/data=!3m1!4b1!4m5!3m4!1s0x8085875e0dc5eb99:0xa53dc6921656703!8m2!3d37.7757428!4d-122.5022525">Find Location here!</a></p>
+            </div>
+        </div>
+
+        <div class="gallery">
+
+            <img src="images/korean.jpg" width="600" height="400">
+
+            <div class="desc">Han Il Kwan<br>
+                <p class="location"><a target="_blank" href="https://www.google.com/maps/place/Han+Il+Kwan/@37.7767181,-122.4804637,17z/data=!3m1!4b1!4m5!3m4!1s0x80858712366ca223:0x33fbb2cde7057379!8m2!3d37.7767139!4d-122.478275">Find Location here!</a></p>
+            </div>
+        </div>
+
+        <div class="gallery">
+
+            <img src="images/dimsum.jpg" width="600" height="400">
+
+            <div class="desc">Hong Kong Lounge<br>
+                <p class="location"><a target="_blank" href="https://www.google.com/maps/place/Hong+Kong+Lounge/@37.7807129,-122.4788532,17z/data=!3m1!4b1!4m5!3m4!1s0x808587111e3aa9cb:0xecbf001743316ae6!8m2!3d37.7807087!4d-122.4766645">Find Location here!</a></p>
+            </div>
+        </div>
+
+        <div class="gallery">
+
+            <img src="images/ramen.jpg" width="600" height="400">
+
+            <div class="desc">Marufuku Ramen<br>
+                <p class="location"><a target="_blank" href="https://www.google.com/maps/place/Marufuku+Ramen/@37.7851799,-122.434189,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7e2cbc4e87b1:0xe9c8a41858638b24!8m2!3d37.7851757!4d-122.4320003">Find Location here!</a></p>
+            </div>
+        </div>
+
+        <div class="gallery">
+
+            <img src="images/chowder.jpg" width="600" height="400">
+
+            <div class="desc">Boudin Bakery Cafe<br>
+                <p class="location"><a target="_blank" href="https://www.google.com/maps/place/Boudin+Bakery+Cafe/@37.7771904,-122.5473239,12z/data=!3m1!5s0x808580e30fbe2e17:0xea6452c780a8aa4b!4m8!1m2!2m1!1ssf+clam+chowder!3m4!1s0x808580e311fa8115:0x3f44089a41e5ac6e!8m2!3d37.808456!4d-122.414894">Find Location here!</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="questions">
+        <p>GOT QUESTIONS?</p>
+    </div>
+    <p class="email"><a class="noUnderline" href="mailto:jtan222@mail.ccsf.edu">EMAIL US! </a> </p>
+
+
+
+    <footer>
+
+        <p>JANICE TAN | 2021</p>
+
+    </footer>
+
+    <script>
+        /* When the user clicks on the button, 
+                                                                toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show2");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn2')) {
+                var myDropdown = document.getElementById("myDropdown2");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

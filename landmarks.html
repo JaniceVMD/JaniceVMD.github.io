@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/attractions.css">
+    <title>SF LANDMARKS</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="logo" href="index.html"> <img width="120" src="images/logo.svg"></a>
+        <a class="home" href="index.html">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">TOURIST ATTRACTIONS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content0" id="myDropdown">
+                <a class="Droptext" href="museums.html">MUSEUMS</a>
+                <a class="Droptext" href="landmarks.html">LANDMARKS</a>
+            </div>
+        </div>
+
+        <div class="dropdown2">
+            <button class="dropbtn2" onclick="myFunction2()">FOOD
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown2">
+                <a class="Droptext" href="snacks.html">SNACKS</a>
+                <a class="Droptext" href="restaurants.html">RESTARANTS</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="column1 clear">
+
+
+        <div class="yellowbox">
+            <img class="image" width="200px" src="images/ggpark.jpg">
+
+            <p class="title">Golden Gate Park</p>
+            <p>An iconic park consisting of many
+                museums and playgrounds, lakes
+                a ferris wheel and much more! Enjoy
+                strolling,nbiking, rowboating or
+                picnicking at GG Park.
+            </p>
+            <p class="location"><a target="_blank" href="https://www.google.com/maps?q=golden+gate+park&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjTneqg-IbwAhWDrJ4KHc3wDqAQ_AUoAXoECAEQAw">Find Location here!</a></p>
+
+        </div>
+
+        <div class="yellowbox">
+            <img class="image" width="200px" src="images/chinatown.jpg">
+            <p class="title">Chinatown</p>
+            <p>
+                Start exploring this vibrant and busy
+                neighborhood, home to so many
+                delicious bakeries, quirky shops
+                and colorful street art.
+            </p>
+            <p class="location"><a target="_blank" href="https://www.google.com/maps/place/Chinatown,+San+Francisco,+CA/@37.7940949,-122.4115089,16z/data=!3m1!4b1!4m5!3m4!1s0x8085808b58a58a1d:0x289f3092660f80ac!8m2!3d37.7941378!4d-122.4077914">Find Location here!</a></p>
+
+        </div>
+
+    </div>
+
+    <div class="column2">
+
+        <div class="yellowbox">
+            <img class="image" width="200px" src="images/ggbridge.jpg">
+            <p class="title">Golden Gate Bridge</p>
+            <p>
+                Observe the historic bridge from a
+                distance as you walk by the beach or
+                bike on the bridge as the wind blows.
+            </p>
+            <p class="location"><a target="_blank" href="https://www.google.com/maps/place/Golden+Gate+Bridge/@37.8199328,-122.4804438,17z/data=!3m1!4b1!4m5!3m4!1s0x808586deffffffc3:0xcded139783705509!8m2!3d37.8199286!4d-122.4782551">Find Location here!</a></p>
+
+        </div>
+
+        <div class="yellowbox">
+            <img class="image" width="200px" src="images/palace.jpg">
+            <p class="title">Palace of fine arts</p>
+            <p>
+                Not too far from Golden Gate Bridge,
+                The Palace of fine arts is a
+                breathtaking place. Enjoy the
+                wonderful architecture and lake
+                as you stroll through this beautiful
+                landmark.
+            </p>
+            <p class="location"><a target="_blank" href="https://www.google.com/maps/place/The+Palace+Of+Fine+Arts/@37.802935,-122.4506118,17z/data=!3m2!4b1!5s0x808586d51a82fcd7:0x3f69d97c07f0fba3!4m5!3m4!1s0x808586d510144681:0xe960db8a581aacf5!8m2!3d37.8029308!4d-122.4484231">Find Location here!</a></p>
+
+
+
+        </div>
+
+        <div class="yellowbox">
+            <img class="image" width="200px" src="images/wharf.jpg">
+            <p class="title">Fisherman’s wharf</p>
+            <p>
+                Amazing views, adorable sea lions,
+                chowder bread bowls, cotton candy,
+                California wines, and the list of
+                possibilities here at the wharf
+                are endless.
+            </p>
+            <p class="location"><a target="_blank" href="https://www.google.com/maps/place/Fisherman's+Wharf,+San+Francisco,+CA/@37.8081269,-122.4253858,15z/data=!3m1!4b1!4m5!3m4!1s0x808580fa79aee3b9:0xd0ce5b8bf914906a!8m2!3d37.8079996!4d-122.4177434">Find Location here!</a></p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="questions clear">
+        <p>GOT QUESTIONS?</p>
+    </div>
+    <p class="email"><a class="noUnderline" href="mailto:jtan222@mail.ccsf.edu">EMAIL US! </a> </p>
+
+
+
+    <footer>
+
+        <p>JANICE TAN | 2021</p>
+
+    </footer>
+
+    <script>
+        /* When the user clicks on the button, 
+                                                                toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show2");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn2')) {
+                var myDropdown = document.getElementById("myDropdown2");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+
+</body></html>
