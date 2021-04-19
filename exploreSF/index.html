@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Welcome to SF</title>
+
+</head>
+
+
+
+<body>
+
+    <div class="navbar">
+        <a class="logo" href="index.html"> <img width="120" src="images/logo.svg"></a>
+        <a class="home" href="#home">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">TOURIST ATTRACTIONS
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content0" id="myDropdown">
+                <a class="Droptext" href="museums.html">MUSEUMS</a>
+                <a class="Droptext" href="landmarks.html">LANDMARKS</a>
+            </div>
+        </div>
+
+        <div class="dropdown2">
+            <button class="dropbtn2" onclick="myFunction2()">FOOD
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown2">
+                <a class="Droptext" href="snacks.html">SNACKS</a>
+                <a class="Droptext" href="restaurants.html">RESTARANTS</a>
+            </div>
+        </div>
+    </div>
+    <!--Good job on the welcome section...whenever you try to overlap objects the coding gets tricky. -->
+
+    <div class="welcome">
+        <img class="welcomeBridge" width="450" src="images/WelcomeBridge.svg">
+
+        <p class="welcomeTitle">Welcome to <br>San Francisco!</p>
+
+        <p class="welcomeDescript">
+            Hello visitor, <br>
+            Are you looking for the very best places to visit in the iconic city of San Francisco? <br>Well, you are at the right place. This website showcases landmarks beloved by many SF residents and tourists. Happy exploring!
+        </p>
+
+    </div>
+    <p class="exploreText">EXPLORE</p>
+    <!--    I moved Explore above the div with the icons inside it.-->
+    <!--    I placed divs around each of the 3 columns.-->
+    <!--    I commented out your 16% size on the pictures. I'm trying to control the size of the divs for the columns, and setting the picture to fill that column.-->
+
+    <div class="exploreIconSection">
+        <div class="col">
+            <a href="landmarks.html"><img class="explore1" src="images/landmarks.svg"></a>
+            <p class="explore1text"><a href="landmarks.html">Landmarks</a></p>
+        </div>
+        <div class="col">
+            <a href="restaurants.html"><img class="explore1" src="images/restaurants.svg"></a>
+            <p class="explore1text"><a href="restaurants.html">Restaurants</a></p>
+        </div>
+        <div class="col">
+            <a href="snacks.html"><img class="explore1" src="images/snacks.svg"></a>
+            <p class="explore1text"><a href="snacks.html">Snacks</a></p>
+        </div>
+        <!--        Note that I changed your class names so that the images and p tags use the same class name since they share the same CSS properties; that will reduce the number of classes in your stylesheet.-->
+        <!--        I wish all three images were prepared in the image program at the same height and width because it would make it easier to align them without coding each one individually.-->
+    </div>
+
+    <div class="questions">
+        <p>GOT QUESTIONS?</p>
+    </div>
+    <p class="email"><a class="noUnderline" href="mailto:jtan222@mail.ccsf.edu">EMAIL US! </a> </p>
+
+
+
+    <footer>
+
+        <p>JANICE TAN | 2021</p>
+
+    </footer>
+
+    <script>
+        /* When the user clicks on the button, 
+                                                                toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+        function myFunction2() {
+            document.getElementById("myDropdown2").classList.toggle("show2");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn2')) {
+                var myDropdown = document.getElementById("myDropdown2");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
